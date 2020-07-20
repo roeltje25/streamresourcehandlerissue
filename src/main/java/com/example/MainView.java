@@ -21,6 +21,7 @@ public class MainView extends VerticalLayout {
 			throw new IllegalStateException("Oops we cannot generate the stream");
 		});
 		Anchor anchor = new Anchor(faulty, "Click Here");
+		anchor.getElement().setAttribute("download", true);
 
 		add(anchor);
 	}
